@@ -47,6 +47,7 @@ class SkillCard extends HTMLElement {
 
       .skills__area--item__title {
         margin-top: 10px;
+        font-size: 1.5rem;
         font-weight: bold;
         letter-spacing: 1.1px;
         color: var(--white);

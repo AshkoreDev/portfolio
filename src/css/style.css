@@ -138,6 +138,7 @@ nav {
   border-bottom: 1px solid var(--green);
 }
 
+/* ABOUT ME */
 /* SKILLS */
 .section__skills {
   margin: 0 auto;
@@ -162,4 +163,27 @@ nav {
   align-items: center;
   justify-content: center;
   gap: 30px 20px;
+}
+
+/* PROJECTS */
+
+/* FOTTER */
+.footer__container {
+  padding: 10px 0;
+  font-size: 1.5rem;
+  text-align: center;
+  color: var(--white);
+}
+
+.footer__info {
+  width: 320px;
+  margin: 20px auto;
+  letter-spacing: 1.5px;
+}
+
+.footer__info--item {
+  margin: 0 15px;
+  padding-bottom: 5px;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
 }
