@@ -44,13 +44,15 @@ li {
 /* HEADER */
 header {
 	height: 100vh;
+  padding: 40px 0;
   flex-direction: column;
+  justify-content: center;
 }
 
 .header__img {
   width: 200px;
   height: 200px;
-  margin: 40px 0;
+  margin-bottom: 40px;
   border-radius: 50%;
   background-color: var(--grey);
 }
@@ -118,7 +120,7 @@ nav {
 
 .section__header {
   width: 200px;
-  margin-left: 20px;
+  margin: 0 0 40px 20px;
 }
 
 .section__header--subtitle {
