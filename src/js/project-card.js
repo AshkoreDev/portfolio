@@ -74,6 +74,7 @@ class projectCard extends HTMLElement {
 
         .projects__card--title {
           min-height: 45px;
+          font-size: 2rem;
           text-align: center;
           letter-spacing: 4px;
           color: var(--white);
@@ -90,7 +91,7 @@ class projectCard extends HTMLElement {
         .projects__card--img img {
           width: 100%;
           height: 100%;
-          border-radius: 10px;
+          border-radius: inherit;
           object-fit: cover;
         }
 
@@ -98,6 +99,7 @@ class projectCard extends HTMLElement {
           min-height: 50px;
           margin-bottom: 20px;
           padding-top: 20px;
+          font-size: 1.4rem;
           letter-spacing: 1.5px;
           color: var(--white);
           border-top: 1px solid var(--green);
@@ -111,6 +113,7 @@ class projectCard extends HTMLElement {
 
         .projects__card--buttons a {
           padding: 10px 20px;
+          font-size: 1.5rem;
           letter-spacing: 2px;
           text-decoration: none;
           color: var(--btn-bg-color);

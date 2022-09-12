@@ -166,6 +166,14 @@ nav {
 }
 
 /* PROJECTS */
+.section__projects {
+  margin: 0 auto;
+  padding: 40px 0;
+  display: flex;
+  flex-wrap: wrap;
+  place-content: center;
+  gap: 60px;
+}
 
 /* FOTTER */
 .footer__container {
