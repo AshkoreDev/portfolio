@@ -36,7 +36,7 @@ class projectCard extends HTMLElement {
             <section class="projects__card--section">
               <h3 class="projects__card--title">${this.name}</h3>
               <figure class="projects__card--img">
-                <img src="${this.img}" alt="${this.name} Page Image">
+                <img src="${this.img}" alt="${this.name} Page Image" download="lazy">
               </figure>
               <p class="projects__card--description">${this.description}</p>
               <section class="projects__card--buttons">
