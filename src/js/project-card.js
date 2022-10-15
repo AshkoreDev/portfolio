@@ -81,9 +81,9 @@ class projectCard extends HTMLElement {
         }
 
         .projects__card--img {
-          width: 280px;
-          height: 200px;
-          margin: 20px auto 15px;
+          width: 260px;
+          height: 180px;
+          margin: 0px auto;
           border-radius: 10px;
           background-color: var(--light-grey);
         }
@@ -101,6 +101,7 @@ class projectCard extends HTMLElement {
           padding-top: 20px;
           font-size: 1.4rem;
           letter-spacing: 1.5px;
+          text-align: justify;
           color: var(--white);
           border-top: 1px solid var(--green);
         }
