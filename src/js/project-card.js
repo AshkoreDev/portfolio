@@ -92,7 +92,7 @@ class projectCard extends HTMLElement {
           width: 100%;
           height: 100%;
           border-radius: inherit;
-          object-fit: scall-down;
+          object-fit: fill;
         }
 
         .projects__card--description {
