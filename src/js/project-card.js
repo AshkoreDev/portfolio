@@ -92,7 +92,7 @@ class projectCard extends HTMLElement {
           width: 100%;
           height: 100%;
           border-radius: inherit;
-          object-fit: fill;
+          object-fit: cover;
         }
 
         .projects__card--description {
@@ -119,7 +119,6 @@ class projectCard extends HTMLElement {
           text-decoration: none;
           color: var(--btn-bg-color);
           border-radius: 4px;
-          opacity: 1;
           background-color: var(--green);
         }
 
