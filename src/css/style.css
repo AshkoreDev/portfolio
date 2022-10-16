@@ -29,6 +29,8 @@ body {
 
 a {
   text-decoration: none;
+  padding-bottom: var(--padding-item);
+  border-bottom: 1px solid transparent;
 }
 
 li {
@@ -96,11 +98,6 @@ h1 {
 .header__socialMedia {
   margin: 50px 5px 10px;
   text-align: center;
-}
-
-.header__socialMedia--item {
-  padding-bottom: var(--padding-item);
-  border-bottom: 1px solid transparent;
 }
 
 .header__socialMedia--item:nth-child(2) {
@@ -216,4 +213,14 @@ nav {
   padding-bottom: 5px;
   text-decoration: none;
   border-bottom: 1px solid transparent;
+}
+
+/*MEDIA QUERIES*/
+@media (hover: hover) {
+  .header__socialMedia--item:hover {
+    border-color: var(--white);
+  }
+  .footer__info--item:hover {
+    border-color: var(--white);
+  }
 }
