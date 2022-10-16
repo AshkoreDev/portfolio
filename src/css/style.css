@@ -67,8 +67,8 @@ header {
 }*/
 
 .header__img {
-  width: 240px;
-  height: 240px;
+  width: 220px;
+  height: 220px;
   margin-bottom: 40px;
   border-radius: 50%;
   background-color: var(--grey);
@@ -96,7 +96,7 @@ h1 {
 }
 
 .header__socialMedia {
-  margin: 50px 5px 10px;
+  margin: 40px 0 10px;
   text-align: center;
 }
 
