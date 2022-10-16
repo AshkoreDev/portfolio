@@ -7,7 +7,7 @@ class projectCard extends HTMLElement {
     }
 
     static get observedAttributes() {
-      return ['name', 'img', 'description', 'html_url', 'homepage'];
+      return ['name', 'img', 'description', 'demo', 'repo'];
     }
 
     attributeChangedCallback(attr, oldVal, newVal) {
@@ -20,11 +20,11 @@ class projectCard extends HTMLElement {
       if(attr === 'description' && oldVal !== newVal) {
         this.description = newVal;
       }
-      if(attr === 'html_url' && oldVal !== newVal) {
-        this.html_url = newVal;
+      if(attr === 'demo' && oldVal !== newVal) {
+        this.demo = newVal;
       }
-      if(attr === 'homepage' && oldVal !== newVal) {
-        this.homepage = newVal;
+      if(attr === 'repo' && oldVal !== newVal) {
+        this.repo = newVal;
       }
     }
 
@@ -40,8 +40,8 @@ class projectCard extends HTMLElement {
               </figure>
               <p class="projects__card--description">${this.description}</p>
               <section class="projects__card--buttons">
-                <a href="${this.homepage}" target="_blank">Demo</a>
-                <a href="${this.html_url}" target="_blank">Code</a>
+                <a href="${this.demo}" target="_blank">Demo</a>
+                <a href="${this.repo}" target="_blank">Code</a>
               </section>
             </section>
           </article>
