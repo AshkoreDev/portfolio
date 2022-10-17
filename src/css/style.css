@@ -131,12 +131,12 @@ nav {
 .section {
 	min-height: 100vh;
   margin: 0 auto;
-  padding: 50px 20px 10px;
+  padding: 60px 20px 10px;
 }
 
 .section__header {
   width: 200px;
-  margin: 0 0 40px 20px;
+  margin-bottom:40px;
 }
 
 .section__header--subtitle {
@@ -161,12 +161,12 @@ nav {
 /* SKILLS */
 .section__skills {
   margin: 0 auto;
-  padding: 50px 0;
+  padding: 10px 0;
 }
 
 .skills__area {
   margin-top: 40px;
-  padding: 0 20px;
+  padding: 0 10px;
 }
 
 .skills__area--title {
@@ -224,3 +224,18 @@ nav {
     border-color: var(--white);
   }
 }
+
+@media and screen (min-width: 768px) {
+  .section__header {
+    margin-left: 20px;
+    
+  }
+
+  .skills__area {
+    padding: 0 20px;
+  }
+}
+
+@media and screen (min-width: 1024px) {
+
+} 
