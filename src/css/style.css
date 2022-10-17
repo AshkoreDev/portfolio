@@ -220,22 +220,24 @@ nav {
   .header__socialMedia--item:hover {
     border-color: var(--white);
   }
+  .navBar--item:hover {
+    border-color: var(--white);
+  }
   .footer__info--item:hover {
     border-color: var(--white);
   }
 }
 
-@media and screen (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .section__header {
     margin-left: 20px;
-    
   }
 
   .skills__area {
-    padding: 0 20px;
+    padding: 0 30px;
   }
 }
 
-@media and screen (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
 
 } 
