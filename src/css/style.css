@@ -181,6 +181,10 @@ nav {
   background-color: var(--green);
 }
 
+.aboutMe--cvBtn a:link {
+  color: var(--btn-color);
+}
+
 /* SKILLS */
 .section__skills {
   margin: 0 auto;
