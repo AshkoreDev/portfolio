@@ -33,17 +33,22 @@ class projectCard extends HTMLElement {
       template.innerHTML = `
         <article class="projects__card">
             <div class="projects__card--line"></div>
-            <section class="projects__card--section">
+
+            <section class="projects__card__section">
               <h3 class="projects__card--title">${this.name}</h3>
+
               <figure class="projects__card--img">
-                <img src="${this.img}" alt="${this.name} Page Image" loading="lazy">
+                <img src="${this.img}" alt="${this.name} Page Image" width="260" height="180" loading="lazy" >
               </figure>
+
               <p class="projects__card--description">${this.description}</p>
+
               <section class="projects__card--buttons">
                 <a href="${this.demo}" target="_blank">Demo</a>
                 <a href="${this.repo}" target="_blank">Code</a>
               </section>
             </section>
+
           </article>
         ${this.getStyle()}
       `;
@@ -54,7 +59,7 @@ class projectCard extends HTMLElement {
       return `
       <style>
         .projects__card {
-          width: 300px;
+          width: 280px;
           min-height: 400px;
           display: flex;
           flex-direction: column;
@@ -68,21 +73,21 @@ class projectCard extends HTMLElement {
           background-color: var(--green);
         }
 
-        .projects__card--section {
-          padding: 10px;
+        .projects__card__section {
+          padding: 0 10px 10px;
         }
 
         .projects__card--title {
-          min-height: 45px;
+          min-height: 30px;
           font-size: 2rem;
           text-align: center;
-          letter-spacing: 4px;
+          letter-spacing: 2px;
           color: var(--white);
         }
 
         .projects__card--img {
           width: 260px;
-          height: 180px;
+          height: 160px;
           margin: 0px auto;
           border-radius: 10px;
           background-color: var(--light-grey);
@@ -115,10 +120,11 @@ class projectCard extends HTMLElement {
         .projects__card--buttons a {
           padding: 10px 20px;
           font-size: 1.5rem;
+          font-weight: bold;
           letter-spacing: 2px;
           text-decoration: none;
-          color: var(--btn-bg-color);
-          border-radius: 4px;
+          color: var(--btn-color);
+          border-radius: var(--padding-item);
           background-color: var(--green);
         }
 
