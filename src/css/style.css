@@ -4,6 +4,7 @@
   --grey: #282623;
   --light-grey: #9c9c9c;
   --white: #ffffff;
+  --btn-color: #222222;
 
   --padding-item: 4px;
 }
@@ -158,6 +159,28 @@ nav {
 }
 
 /* ABOUT ME */
+.section__aboutMe {
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+.aboutMe--text {
+  margin-bottom: 40px;
+  font-size: 1.5rem;
+  text-align: justify;
+}
+
+.aboutMe--cvBtn {
+  padding: 5px 10px;
+  color: var(--btn-color);
+  font-size: 1.5rem;
+  letter-spacing: 1.2px;
+  font-weight: bold;
+  border-radius: var(--padding-item);
+  border-color: transparent;
+  background-color: var(--green);
+}
+
 /* SKILLS */
 .section__skills {
   margin: 0 auto;
@@ -226,6 +249,10 @@ nav {
   .footer__info--item:hover {
     border-color: var(--white);
   }
+  .aboutMe--cvBtn:hover {
+    cursor: pointer;
+    opacity: 0.6;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -234,6 +261,10 @@ nav {
   }
 
   .skills__area {
+    padding: 0 30px;
+  }
+
+  .section__aboutMe{
     padding: 0 30px;
   }
 }
