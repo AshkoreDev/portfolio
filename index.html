@@ -3,247 +3,26 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="shortcut icon" href="https://img.icons8.com/ios-filled/15/FFFFFF/give-way.png" type="image/x-icon">
-	<title>Portfolio Aracely Alba</title>
+	<title>Portfolio | Aracely Alba</title>
 	<link rel="stylesheet" href="./src/css/style.css">
 </head>
 <body>
+	
+	<header class="section flex">
+		<figure class="header__figure">
+			<img src="" alt="">
+		</figure>
 
-	<header class="flex">
-    <figure class="header__img" id="headerImgContainer">
-      <img src="https://avatars.githubusercontent.com/u/73759885?v=4" alt="Profile image" width="220" height="220" loading="lazy">
-    </figure>
+		<h1 class="header--title">Aracely Alba</h1>
+		<h4 class="header--subtitle">Web Developer</h4>
 
-		<section class="header__info flex">
-      <h1>Aracely Alba</h1>
-      <h3 class="header__info--subtitle">Web Developer</h3>
+		<div class="header__socialMedia flex">
+			<a href="">Github</a>
+			<a href="">Twitter</a>
+			<a href="">Linkedin</a>
+		</div>
 
-      <div class="header__socialMedia">
-        <a href="https://www.linkedin.com/in/AshkoreDev/" target="_blank" rel="noopener" title="Linkedin" class="header__socialMedia--item">
-          <img src="https://img.icons8.com/ios-filled/30/FFFFFF/linkedin.png" alt="Logo Linkedin" loading="lazy"/>
-        </a>
-        <a href="https://github.com/AshkoreDev" target="_blank" rel="noopener" title="GitHub" class="header__socialMedia--item">
-          <img src="https://img.icons8.com/ios-filled/30/FFFFFF/github.png" alt="Logo GitHub" loading="lazy"/>
-        </a>
-        <a href="https://twitter.com/AshkoreDev" target="_blank" rel="noopener" title="Twitter" class="header__socialMedia--item">
-          <img src="https://img.icons8.com/ios-glyphs/30/FFFFFF/twitter--v1.png" alt="Logo Twitter" loading="lazy"/>
-        </a>
-      </div>  
-    </section>
+		<button class="header--button">Projects ></button>
 	</header>
-
-	<main>
-		<nav>
-      <ul class="navBar flex">
-        <li>
-          <a href="#aboutMe" class="navBar--item">About Me</a>
-        </li>
-        <li>
-          <a href="#skills" class="navBar--item">Skills</a>
-        </li>
-        <li>
-          <a href="#projects" class="navBar--item">Projects</a>
-        </li>
-      </ul>
-    </nav>
-
-    <section id="aboutMe" class="section">
-      <section class="section__header">
-        <h3 class="section__header--subtitle">Discover</h3>
-        <h2 class="section__header--title">About Me!</h2>
-        <div class="section__header--line"></div>
-      </section>
-
-      <section class="section__aboutMe">
-        <p class="aboutMe--text">Lorem ipsum, dolor sit, amet consectetur adipisicing elit. Molestiae, obcaecati. Velit facilis, officia ad ullam iusto similique, sunt veniam incidunt iste dolorum recusandae eligendi blanditiis quas nam aut cum aliquid sed, quibusdam quisquam quia magnam ex vitae. Mollitia fugit, perferendis. Lorem ipsum, dolor sit, amet consectetur adipisicing elit. Molestiae, obcaecati. Velit facilis, officia ad ullam iusto similique, sunt veniam incidunt iste dolorum recusandae eligendi blanditiis quas nam aut cum aliquid sed, quibusdam quisquam quia magnam ex vitae. Mollitia fugit, perferendis.</p>
-
-        <button class="aboutMe--cvBtn">
-          <a href="./src/files/CV-MariaAlba.pdf" download>Download CV</a>
-        </button>
-      </section>
-    </section>
-
-    <section id="skills" class="section">
-      <section class="section__header">
-        <h3 class="section__header--subtitle">Discover</h3>
-        <h2 class="section__header--title">My Skills</h2>
-        <div class="section__header--line"></div>
-      </section>
-
-      <section class="section__skills">
-        <section class="skills__area">
-          <h3 class="skills__area--title">Frontend</h3>
-
-          <section class="skills__area--list">
-             <skill-card
-              img="https://img.icons8.com/color/40/000000/html-5--v1.png"
-              title="HTML5">
-            </skill-card>
-
-            <skill-card
-              img="https://img.icons8.com/color/40/000000/css3.png"
-              title="CSS3">
-            </skill-card>
-
-            <skill-card
-              img="https://img.icons8.com/color/40/000000/javascript--v1.png"
-              title="JavaScript">
-            </skill-card>
-
-            <skill-card
-              img="https://img.icons8.com/color/40/000000/sass.png"
-              title="Sass">
-            </skill-card>
-
-            <skill-card
-              img="https://img.icons8.com/color/40/000000/bootstrap.png"
-              title="Bootstrap">
-            </skill-card>
-
-            <skill-card
-              img="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg"
-              title="TailwindCSS">
-            </skill-card>
-
-            <skill-card
-              img="https://www.vectorlogo.zone/logos/webcomponents/webcomponents-icon.svg"
-              title="Web Components">
-            </skill-card>
-          </section>
-        </section>
-
-        <section class="skills__area">
-          <h3 class="skills__area--title">Backend</h3>
-
-          <section class="skills__area--list">
-            <skill-card
-              img="https://img.icons8.com/external-those-icons-flat-those-icons/344/external-PHP-programming-and-development-those-icons-flat-those-icons.png"
-              title="PHP">
-            </skill-card>
-
-            <skill-card
-              img="https://www.vectorlogo.zone/logos/nodejs/nodejs-icon.svg"
-              title="NodeJs">
-            </skill-card>
-          </section>
-        </section>
-
-        <section class="skills__area">
-          <h3 class="skills__area--title">Data Base</h3>
-
-          <section class="skills__area--list">
-            <skill-card
-              img="https://www.vectorlogo.zone/logos/mysql/mysql-icon.svg"
-              title="MySQL">
-            </skill-card>
-
-            <skill-card
-              img="https://www.vectorlogo.zone/logos/postgresql/postgresql-icon.svg"
-              title="PostgreSQL">
-            </skill-card>
-          </section>
-        </section>
-
-        <section class="skills__area">
-          <h3 class="skills__area--title">Tools</h3>
-
-          <section class="skills__area--list">
-            <skill-card
-            img="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg"
-            title="Git">
-          </skill-card>
-
-          <skill-card
-            img="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg"
-            title="Postman">
-          </skill-card>
-
-          <skill-card
-            img="https://www.freeiconspng.com/uploads/filezilla-icon-2.png"
-            title="FileZilla">
-          </skill-card>
-          </section>
-        </section>
-      </section>
-    </section>
-
-    <section id="projects" class="section">
-      <section class="section__header">
-        <h3 class="section__header--subtitle">Discover</h3>
-        <h2 class="section__header--title">My Projects</h2>
-        <div class="section__header--line"></div>
-      </section>
-
-
-      <section class="section__projects">
-        <project-card
-          name="MovieFlix"
-          img="https://i.imgur.com/7NABYir.png"
-          description="Trending web application in Movies and Tv shows. The Movie Database API practice."
-          demo="https://ashkoredev.github.io/movieFlix/"
-          repo="https://github.com/AshkoreDev/movieFlix">
-        </project-card>
-
-        <project-card
-          name="Cientifico"
-          img="https://i.imgur.com/MCjfrv9.png"
-          description=""
-          demo="https://ashkoredev.github.io/cientifico/"
-          repo="https://github.com/AshkoreDev/cientifico">
-        </project-card>
-
-        <project-card
-          name="Mokepon"
-          img="https://i.imgur.com/t0K4XK3.png"
-          description=""
-          demo="https://ashkoredev.github.io/mokepon/"
-          repo="https://github.com/AshkoreDev/mokepon">
-        </project-card>
-
-        <project-card
-          name="Platzi-Travel"
-          img=""
-          description=""
-          demo=""
-          repo="">
-        </project-card>
-
-        <project-card
-          name="BatataBit"
-          img="https://i.imgur.com/OGdOn1c.png"
-          description=""
-          demo=""
-          repo="">
-        </project-card>
-
-        <project-card
-          name="Card Web Component"
-          img="https://i.imgur.com/mDwIdkt.png"
-          description=""
-          demo=""
-          repo="">
-        </project-card>
-      </section>
-    </section>
-	</main>
-
-  <footer>
-    <section class="footer__container">
-      <section class="footer__info">
-        <a href="https://www.linkedin.com/in/AshkoreDev/" target="_blank" rel="noopener" title="Linkedin" class="footer__info--item">
-        <img src="https://img.icons8.com/ios-filled/30/FFFFFF/linkedin.png" alt="Logo Linkedin" loading="lazy"/>
-      </a>
-       <a href="https://github.com/AshkoreDev" target="_blank" rel="noopener" title="GitHub" class="footer__info--item">
-        <img src="https://img.icons8.com/ios-filled/30/FFFFFF/github.png" alt="Logo GitHub" loading="lazy"/>
-      </a>
-       <a href="https://twitter.com/AshkoreDev" target="_blank" rel="noopener" title="Twitter" class="footer__info--item">
-        <img src="https://img.icons8.com/ios-glyphs/30/FFFFFF/twitter--v1.png" alt="Logo Twitter" loading="lazy"/>
-      </a>
-      </section>
-      <p class="footer__info">Aracely Alba @AshkoreDev | &copy; 2022</p>
-    </section>
-  </footer>
-
-  <script src="./src/main.js" type="module"></script>
 </body>
 </html>
