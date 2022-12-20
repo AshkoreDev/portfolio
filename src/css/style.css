@@ -104,7 +104,6 @@ header {
 	gap: 20px;
 }
 
-
 .header--button {
 	gap: 5px;
 	opacity: 0.8;
@@ -172,6 +171,29 @@ nav {
 
 .aboutMe--cvBtn {
 
+}
+
+/*SKILLS*/
+.skills {
+
+}
+
+.skills__area {
+	margin-top: 20px;
+  padding: 0 10px;
+}
+
+.skills__area--title {
+	color: var(--white);
+	/*font-size: 2rem;*/
+	letter-spacing: 1.2px;
+}
+
+.skills__area__list {
+	min-height: 40px;
+  margin: 20px 0 0;
+  flex-wrap: wrap;
+  gap: 30px 20px;
 }
 
 @media (hover: hover) {
