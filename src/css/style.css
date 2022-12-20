@@ -136,7 +136,7 @@ nav {
 /*SECTION*/
 .section {
 	padding: 10px;
-	height: 100vh;
+	min-height: 100vh;
 }
 
 .section__header {
@@ -179,8 +179,9 @@ nav {
 }
 
 .skills__area {
-	margin-top: 20px;
+	/*margin-top: 20px;*/
   padding: 0 10px;
+  /*background-color: grey;*/
 }
 
 .skills__area--title {
@@ -190,8 +191,8 @@ nav {
 }
 
 .skills__area__list {
-	min-height: 40px;
-  margin: 20px 0 0;
+	min-height: 20px;
+  /*margin: 20px 0 0;*/
   flex-wrap: wrap;
   gap: 30px 20px;
 }
