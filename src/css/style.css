@@ -110,6 +110,30 @@ header {
 	opacity: 0.8;
 }
 
+/*MENU*/
+nav {
+  width: 100%;
+  height: 40px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: var(--grey);
+}
+
+.navBar {
+	width: 100%;
+  height: 100%;
+  justify-content: space-around;
+}
+
+.navBar a {
+	padding-bottom: var(--padding-item);
+  color: var(--white);
+  letter-spacing: 1.1px;
+  /*font-size: 1.5rem;*/
+  border-bottom: 1px solid transparent;
+}
+
 /*SECTION*/
 .section {
 	padding: 10px;
@@ -147,5 +171,8 @@ header {
 	.header--button:hover {
 		opacity: 1;
 		cursor: pointer;
+	}
+	.navBar a:hover {
+		color: var(--green);
 	}
 }
