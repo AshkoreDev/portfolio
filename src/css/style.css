@@ -37,8 +37,6 @@ body::-webkit-scrollbar {
 
 a {
   text-decoration: none;
-  padding-bottom: var(--padding-item);
-  border-bottom: 1px solid transparent;
 }
 
 li {
@@ -102,6 +100,15 @@ header {
 .header__socialMedia {
 	margin-bottom: 50px;
 	gap: 20px;
+}
+
+.header__socialMedia a {
+	widows: 42px;
+	height: 42px;
+	padding: 6px;
+	border-radius: 50%;
+	outline: 1px solid var(--green);
+	border: transparent;
 }
 
 .header--button {
@@ -201,7 +208,7 @@ nav {
 
 @media (hover: hover) {
 	.header__socialMedia a:hover {
-		border-color: var(--white);
+		background-color: var(--green);
 	}
 	.header--button:hover {
 		opacity: 1;
