@@ -187,6 +187,12 @@ nav {
 /*ABOUT ME*/
 .aboutMe--text {
 	margin-bottom: 60px;
+	color: var(--white);
+	letter-spacing: 1.1px;
+}
+
+.aboutMe--text span {
+	color: var(--green);
 }
 
 .aboutMe--cvBtn {
