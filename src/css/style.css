@@ -46,10 +46,6 @@ li {
 }
 
 /*GLOBAL*/
-.section {
-	padding: 10px;
-}
-
 .flex {
 	display: flex;
 	align-items: center;
@@ -68,6 +64,9 @@ li {
 	background-color: var(--green);
 }
 
+.card-button {
+
+}
 
 /*HEADER*/
 header {
@@ -83,7 +82,7 @@ header {
 	background-color: var(--light-grey);
 }
 
-.header__figure > img {
+.header__figure img {
 	width: 100%;
 	border-radius: inherit;
 }
@@ -109,6 +108,36 @@ header {
 .header--button {
 	gap: 5px;
 	opacity: 0.8;
+}
+
+/*SECTION*/
+.section {
+	padding: 10px;
+}
+
+.section__header {
+	width: 300px;
+	margin-bottom: 40px;
+}
+
+.section__header--subtitle {
+	margin-bottom: 10px;
+	color: var(--green);
+	font-style: italic;
+	/*font-size: 2rem;*/
+	letter-spacing: 1.1px;
+}
+
+.section__header--title {
+	margin-bottom: 10px;
+	color: var(--white);
+  /*font-size: 2.5rem;*/
+  letter-spacing: 2px;
+}
+
+.section__header--line {
+	width: 60px;
+  border-bottom: 1px solid var(--green);
 }
 
 @media (hover: hover) {
