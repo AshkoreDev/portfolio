@@ -227,7 +227,9 @@ nav {
 
 .aboutMe__info--button {
 	width: 200px;
-	margin: 80px auto 0;
+	height: auto;
+	margin: 60px auto 0;
+	text-align: center;
 }
 
 /*SKILLS*/
@@ -236,13 +238,15 @@ nav {
 }
 
 .skills__area {
-	/*margin-top: 20px;*/
+	/*margin: 10px 0;*/
+
   padding: 0 10px;
   /*background-color: grey;*/
 }
 
 .skills__area--title {
 	color: var(--white);
+	margin: 20px 0;
 	/*font-size: 2rem;*/
 	letter-spacing: 1.2px;
 }
