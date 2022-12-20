@@ -70,7 +70,7 @@ li {
 
 /*HEADER*/
 header {
-	height: 100vh;
+	/*height: 100vh;*/
 	flex-direction: column;
 }
 
@@ -137,11 +137,12 @@ nav {
 /*SECTION*/
 .section {
 	padding: 10px;
+	height: 100vh;
 }
 
 .section__header {
 	width: 300px;
-	margin-bottom: 40px;
+	margin: 50px 0;
 }
 
 .section__header--subtitle {
@@ -162,6 +163,15 @@ nav {
 .section__header--line {
 	width: 60px;
   border-bottom: 1px solid var(--green);
+}
+
+/*ABOUT ME*/
+.aboutMe--text {
+	margin-bottom: 60px;
+}
+
+.aboutMe--cvBtn {
+
 }
 
 @media (hover: hover) {
