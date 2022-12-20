@@ -196,6 +196,8 @@ nav {
   gap: 30px 20px;
 }
 
+/*PROJECTS*/
+
 @media (hover: hover) {
 	.header__socialMedia a:hover {
 		border-color: var(--white);
