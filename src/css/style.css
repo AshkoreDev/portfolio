@@ -1,16 +1,18 @@
 :root {
 	/*colors*/
-	--primary-color: ;
-	--background-color: ;
-	--white-color: ;
+	--green: #3bc472;
+	--black: #201e1c;
+  --grey: #282623;
+  --light-grey: #9c9c9c;
+	--white: #ffffff;
 
 	/*fonts*/
 	--font-sm: ;
 	--font-md: ;
 	--font-lg: ;
 
-	/*borders*/
 	--border-buttons: ;
+	--padding-item: 4px;
 
 }
 
@@ -18,6 +20,29 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+}
+
+html {
+	/*font-size: 62.5%;*/
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--black);
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  padding-bottom: var(--padding-item);
+  border-bottom: 1px solid transparent;
+}
+
+li {
+  list-style: none;
 }
 
 /*GLOBAL*/
@@ -42,7 +67,7 @@ header {
 	height: 200px;
 	margin-bottom: 20px; 
 	border-radius: 50%;
-	background-color: green;
+	background-color: var(--light-grey);
 }
 
 .header__figure > img {
@@ -51,11 +76,13 @@ header {
 }
 
 .header--title {
-
+	color: var(--white);
+	letter-spacing: 1.2px;
 }
 
 .header--subtitle {
 	margin: 10px 0 30px;
+	color: var(--green);
 	font-style: italic;
 	letter-spacing: 1.1px;
 }
@@ -67,11 +94,18 @@ header {
 
 .header--button {
 	padding: 10px 35px;
+	gap: 10px;
 	color: white;
 	letter-spacing: 1.1px;
 	border-radius: 40px;
 	outline-offset: 2;
 	outline: 1px solid white;
 	border-color: transparent;
-	background-color: green;
+	background-color: var(--primary-color);
+}
+
+@media (hover: hover) {
+	.header__socialMedia a:hover {
+		border-color: var(--white);
+	}
 }
