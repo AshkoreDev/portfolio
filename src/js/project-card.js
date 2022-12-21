@@ -31,24 +31,17 @@ class projectCard extends HTMLElement {
     getTemplate() {
       const template = document.createElement('template');
       template.innerHTML = `
-        <article class="projects__card">
-            <div class="projects__card--line"></div>
+        <article class="card">
+          <figure class="card__figure">
+              <img src="${this.img}" alt="${this.name} Page Image" width="280" height="150" loading="lazy" >
+            </figure>
 
-            <section class="projects__card__section">
-              <h3 class="projects__card--title">${this.name}</h3>
-
-              <figure class="projects__card--img">
-                <img src="${this.img}" alt="${this.name} Page Image" width="260" height="180" loading="lazy" >
-              </figure>
-
-              <p class="projects__card--description">${this.description}</p>
-
-              <section class="projects__card--buttons">
-                <a href="${this.demo}" target="_blank">Demo</a>
-                <a href="${this.repo}" target="_blank">Code</a>
-              </section>
-            </section>
-
+            <h3 class="card--title">${this.name}</h3>
+            <p class="card--description">${this.description}</p>
+            <div class="card__buttons flex">
+              <a href="${this.demo}" target="_blank">DEMO</a>
+              <a href="${this.repo}" target="_blank">CODE</a>
+            </div>
           </article>
         ${this.getStyle()}
       `;
@@ -58,78 +51,52 @@ class projectCard extends HTMLElement {
     getStyle() {
       return `
       <style>
-        .projects__card {
-          width: 280px;
-          min-height: 400px;
-          display: flex;
-          flex-direction: column;
-          border-radius: 10px;
+        .card {
+          width: 300px;
+          padding: 10px;
+          border-radius: 8px;
           background-color: var(--grey);
         }
 
-        .projects__card--line {
-          height: 15px;
-          border-radius: 10px 10px 0 0;
-          background-color: var(--green);
+        .card__figure {
+          width: 280px;
+          height: 150px;
+          background-color: var(--black);
         }
 
-        .projects__card__section {
-          padding: 0 10px 10px;
-        }
-
-        .projects__card--title {
-          min-height: 30px;
-          font-size: 2rem;
-          text-align: center;
-          letter-spacing: 2px;
-          color: var(--white);
-        }
-
-        .projects__card--img {
-          width: 260px;
-          height: 160px;
-          margin: 0px auto;
-          border-radius: 10px;
-          background-color: var(--light-grey);
-        }
-
-        .projects__card--img img {
+        .card__figure img {
           width: 100%;
-          height: 100%;
-          border-radius: inherit;
-          object-fit: cover;
         }
 
-        .projects__card--description {
-          min-height: 50px;
-          margin-bottom: 20px;
-          padding-top: 20px;
-          font-size: 1.4rem;
-          letter-spacing: 1.5px;
-          text-align: justify;
+        .card--title {
+          margin: 20px 0;
+          color: var(--green);
+          text-align: center;
+          letter-spacing: 1.2px;
+        }
+
+        .card--description {
+          margin-bottom: 30px;
           color: var(--white);
-          border-top: 1px solid var(--green);
+          letter-spacing: 1.1px;
         }
 
-        .projects__card--buttons {
-          margin-bottom: 10px;
-          display: flex;
-          justify-content: space-around;
+        .card__buttons {
+          gap: 20px;
         }
 
-        .projects__card--buttons a {
-          padding: 10px 20px;
-          font-size: 1.5rem;
+        .card__buttons a {
+          padding: 5px;
+          color: var(--black);
           font-weight: bold;
-          letter-spacing: 2px;
-          text-decoration: none;
-          color: var(--btn-color);
-          border-radius: var(--padding-item);
+          letter-spacing: 1.1px;
+          border-radius: 4px;
+          border: 1px solid var(--green);
           background-color: var(--green);
         }
 
         @media (hover: hover) {
-          .projects__card--buttons a:hover {
+          .card__buttons a:hover {
             opacity: .6;
           }
         }
