@@ -35,19 +35,22 @@ class SkillCard extends HTMLElement {
   getStyle() {
     return `
     <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
       .skills__area--item {
-        width: 100px;
+        width: 160px;
         padding: 10px;
         text-align: center;
-        border-radius: 10px;
+        border-radius: 6px;
         background-color: var(--grey);
       }
-
       .skills__area--item img {
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
       }
-
       .skills__area--item__title {
         color: var(--white);
         font-weight: bold;
@@ -56,7 +59,7 @@ class SkillCard extends HTMLElement {
 
       @media (hover: hover) {
         .skills__area--item:hover {
-          opacity: .8;
+          opacity: .6;
         }
       }
     </style>

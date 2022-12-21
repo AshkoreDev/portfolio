@@ -38,7 +38,7 @@ class projectCard extends HTMLElement {
 
           <h3 class="card--title">${this.name}</h3>
           <p class="card--description">${this.description}</p>
-          <div class="card__buttons flex">
+          <div class="card__buttons">
             <a href="${this.demo}" target="_blank">DEMO</a>
             <a href="${this.repo}" target="_blank">CODE</a>
           </div>
@@ -55,11 +55,6 @@ class projectCard extends HTMLElement {
           margin: 0;
           padding: 0;
           box-sizing: border-box;
-        }
-        .flex {
-          display: flex;
-          align-items: center;
-          justify-content: center;
         }
         .card {
           width: 300px;
@@ -90,6 +85,9 @@ class projectCard extends HTMLElement {
         }
         .card__buttons {
           gap: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
         }
         .card__buttons a {
           padding: 5px;
