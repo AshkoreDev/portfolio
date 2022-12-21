@@ -33,15 +33,15 @@ class projectCard extends HTMLElement {
       template.innerHTML = `
         <article class="card">
           <figure class="card__figure">
-              <img src="${this.img}" alt="${this.name} Page Image" width="280" height="150" loading="lazy" >
-            </figure>
+            <img src="${this.img}" alt="${this.name} Page Image" width="280" height="150" loading="lazy">
+          </figure>
 
-            <h3 class="card--title">${this.name}</h3>
-            <p class="card--description">${this.description}</p>
-            <div class="card__buttons flex">
-              <a href="${this.demo}" target="_blank">DEMO</a>
-              <a href="${this.repo}" target="_blank">CODE</a>
-            </div>
+          <h3 class="card--title">${this.name}</h3>
+          <p class="card--description">${this.description}</p>
+          <div class="card__buttons flex">
+            <a href="${this.demo}" target="_blank">DEMO</a>
+            <a href="${this.repo}" target="_blank">CODE</a>
+          </div>
           </article>
         ${this.getStyle()}
       `;
@@ -51,45 +51,52 @@ class projectCard extends HTMLElement {
     getStyle() {
       return `
       <style>
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+        .flex {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
         .card {
           width: 300px;
           padding: 10px;
           border-radius: 8px;
           background-color: var(--grey);
         }
-
         .card__figure {
           width: 280px;
           height: 150px;
           background-color: var(--black);
         }
-
         .card__figure img {
           width: 100%;
+          object-fit: cover;
+          object-position: top;
         }
-
         .card--title {
           margin: 20px 0;
           color: var(--green);
           text-align: center;
           letter-spacing: 1.2px;
         }
-
         .card--description {
           margin-bottom: 30px;
           color: var(--white);
           letter-spacing: 1.1px;
         }
-
         .card__buttons {
           gap: 20px;
         }
-
         .card__buttons a {
           padding: 5px;
           color: var(--black);
           font-weight: bold;
           letter-spacing: 1.1px;
+          text-decoration: none;
           border-radius: 4px;
           border: 1px solid var(--green);
           background-color: var(--green);

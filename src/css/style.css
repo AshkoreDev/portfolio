@@ -233,17 +233,8 @@ nav {
 /*PROJECTS*/
 .section__projects {
 	flex-wrap: wrap;
-	gap: 80px;
+	gap: 80px; 
 }
-
-.card {
-	width: 300px;
-	padding: 10px;
-	border-radius: 8px;
-	background-color: var(--grey);
-}
-
-
 
 @media (hover: hover) {
 	.header__socialMedia a:hover {
