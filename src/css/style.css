@@ -231,40 +231,52 @@ nav {
 }
 
 /*PROJECTS*/
+.section__projects {
+	flex-wrap: wrap;
+	gap: 80px;
+}
+
 .card {
 	width: 300px;
-	padding: 0 10px 10px 0;
-	background-color: var(--grey);
+	padding: 10px;
 	border-radius: 8px;
+	background-color: var(--grey);
 }
 
 .card__figure {
-	width: 250px;
+	width: 280px;
 	height: 150px;
-	margin-bottom: 20px;
-	background-color: black;
-	border-radius: 8px 0 100px 0;
+	background-color: var(--black);
 }
 
 .card__figure img {
 	width: 100%;
-	border-radius: inherit;
 }
 
 .card--title {
-	margin: 10px 0;
+	margin: 20px 0;
 	color: var(--white);
 	text-align: center;
 	letter-spacing: 1.2px;
 }
 
-.card__buttons {
-	text-align: right;
+.card--description {
+	margin-bottom: 30px;
+	letter-spacing: 1.1px;
 }
 
-.card--description {
-	margin: 10px 0 10px 10px;
+.card__buttons {
+	gap: 20px;
+}
+
+.card__buttons button {
+	padding: 5px;
+	color: var(--black);
+	font-weight: bold;
 	letter-spacing: 1.1px;
+	border-radius: 4px;
+	border: 1px solid var(--green);
+	background-color: var(--green);
 }
 
 @media (hover: hover) {
