@@ -110,9 +110,10 @@ header {
 	width: 40px;
 	height: 40px;
 	padding: 8px;
+	opacity: 0.8;
 	border-radius: 50%;
-	outline: 1px solid var(--white);
 	border: transparent;
+	outline: 1px solid var(--white);
 }
 
 .header--button {
@@ -284,7 +285,7 @@ nav {
 
 @media (hover: hover) {
 	.header__socialMedia a:hover {
-		background-color: var(--green);
+		opacity: 1;
 	}
 	.header--button:hover {
 		opacity: 1;
