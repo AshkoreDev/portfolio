@@ -58,6 +58,7 @@ class projectCard extends HTMLElement {
         }
         .card {
           width: 300px;
+          min-height: 340px;
           padding: 10px;
           border-radius: 8px;
           background-color: var(--grey);
