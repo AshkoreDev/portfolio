@@ -37,7 +37,10 @@ class SkillCard extends HTMLElement {
     <style>
       .skills__area--item {
         width: 100px;
+        padding: 10px;
         text-align: center;
+        border-radius: 10px;
+        background-color: var(--grey);
       }
 
       .skills__area--item img {

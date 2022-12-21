@@ -226,43 +226,24 @@ nav {
 
 /*SKILLS*/
 .skills {
-
-}
-
-.skills__area {
-	/*margin: 10px 0;*/
-
-  padding: 0 10px;
-  /*background-color: grey;*/
-}
-
-.skills__area--title {
-	color: var(--white);
-	margin: 20px 0;
-	/*font-size: 2rem;*/
-	letter-spacing: 1.2px;
-}
-
-.skills__area__list {
-	min-height: 20px;
-  /*margin: 20px 0 0;*/
-  flex-wrap: wrap;
-  gap: 30px 20px;
+	flex-wrap: wrap;
+	gap: 20px;
 }
 
 /*PROJECTS*/
 .card {
 	width: 300px;
 	padding: 0 10px 10px 0;
-	background-color: var(--light-grey);
+	background-color: var(--grey);
 	border-radius: 8px;
 }
 
 .card__figure {
 	width: 250px;
 	height: 150px;
+	margin-bottom: 20px;
 	background-color: black;
-	border-radius: 8px 0 150px 0;
+	border-radius: 8px 0 100px 0;
 }
 
 .card__figure img {
@@ -271,8 +252,10 @@ nav {
 }
 
 .card--title {
-	margin: 10px auto;
+	margin: 10px 0;
+	color: var(--white);
 	text-align: center;
+	letter-spacing: 1.2px;
 }
 
 .card__buttons {
@@ -280,7 +263,8 @@ nav {
 }
 
 .card--description {
-	margin: 10px auto;
+	margin: 10px 0 10px 10px;
+	letter-spacing: 1.1px;
 }
 
 @media (hover: hover) {
