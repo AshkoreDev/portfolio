@@ -255,13 +255,14 @@ nav {
 
 .card--title {
 	margin: 20px 0;
-	color: var(--white);
+	color: var(--green);
 	text-align: center;
 	letter-spacing: 1.2px;
 }
 
 .card--description {
 	margin-bottom: 30px;
+	color: var(--white);
 	letter-spacing: 1.1px;
 }
 
