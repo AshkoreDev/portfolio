@@ -283,7 +283,6 @@ footer > section {
 	.section {
 		padding: 40px 80px;
 	}
-
 	footer {
 		padding: 80px;
 		justify-content: center;
@@ -292,7 +291,8 @@ footer > section {
 }
 
 @media (hover: hover) {
-	.header__socialMedia a:hover {
+	.header__socialMedia a:hover,
+	.footer__socialMedia a:hover {
 		opacity: 0.6;
 	}
 	.principal-button:hover {
