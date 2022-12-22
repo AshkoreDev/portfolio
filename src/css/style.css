@@ -238,7 +238,7 @@ nav {
 
 /*FOOTER*/
 footer {
-	height: 300px;
+	height: 320px;
 	margin-top: 40px;
 	padding: 20px;
 	gap: 40px;
@@ -261,8 +261,7 @@ footer > section {
 }
 
 .footer__contactInfo {
-	/*width: 100%;*/
-	/*margin: 40px 0;*/
+	height: 160px;
 }
 
 .footer__socialMedia {
