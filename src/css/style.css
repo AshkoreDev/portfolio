@@ -106,11 +106,11 @@ header {
 	gap: 20px;
 }
 
-.header__socialMedia a {
+.header__socialMedia a,
+.footer__socialMedia a {
 	width: 40px;
 	height: 40px;
 	padding: 8px;
-	/*opacity: 1;*/
 	border-radius: 50%;
 	border: transparent;
 	outline: 1px solid var(--white);
@@ -234,6 +234,41 @@ nav {
 .section__projects {
 	flex-wrap: wrap;
 	gap: 80px; 
+}
+
+/*FOOTER*/
+footer {
+	height: 300px;
+	margin-top: 40px;
+	padding: 20px;
+	gap: 40px;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	color: var(--black);
+	background-color: var(--green);
+}
+
+footer > section {
+	width: 280px;
+}
+
+.footer__info {
+	height: 80px;
+}
+
+.footer__info h3 {
+	margin-bottom: 20px;
+}
+
+.footer__contactInfo {
+	/*width: 100%;*/
+	/*margin: 40px 0;*/
+}
+
+.footer__socialMedia {
+	margin-top: 20px;
+	justify-content: flex-start;
+	gap: 20px;
 }
 
 /*MEDIA QUERIES*/
