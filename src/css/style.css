@@ -252,22 +252,14 @@ footer > section {
 	width: 280px;
 }
 
-.footer__info {
-	/*height: 80px;*/
-}
-
 .footer__info h3 {
 	margin-bottom: 20px;
 }
 
-.footer__contactInfo {
-	/*height: 160px;*/
-}
-
 .footer__socialMedia {
 	margin-top: 20px;
-	justify-content: flex-start;
 	gap: 20px;
+	justify-content: flex-start;
 }
 
 /*MEDIA QUERIES*/
@@ -291,7 +283,7 @@ footer > section {
 	.section {
 		padding: 40px 80px;
 	}
-	
+
 	footer {
 		padding: 80px;
 		justify-content: center;
