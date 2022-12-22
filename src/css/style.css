@@ -236,6 +236,19 @@ nav {
 	gap: 80px; 
 }
 
+/*MEDIA QUERIES*/
+@media screen and (min-width: 768px) {
+	.section {
+		padding: 20px 40px;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.section {
+		padding: 40px 80px;
+	}
+}
+
 @media (hover: hover) {
 	.header__socialMedia a:hover {
 		opacity: 0.6;
