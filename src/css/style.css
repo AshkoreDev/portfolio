@@ -241,9 +241,9 @@ footer {
 	height: 320px;
 	margin-top: 40px;
 	padding: 20px;
-	gap: 40px;
+	display: flex;
 	flex-wrap: wrap;
-	align-items: flex-start;
+	align-content: space-between;
 	color: var(--black);
 	background-color: var(--green);
 }
@@ -253,7 +253,7 @@ footer > section {
 }
 
 .footer__info {
-	height: 80px;
+	/*height: 80px;*/
 }
 
 .footer__info h3 {
@@ -261,7 +261,7 @@ footer > section {
 }
 
 .footer__contactInfo {
-	height: 160px;
+	/*height: 160px;*/
 }
 
 .footer__socialMedia {
@@ -275,11 +275,27 @@ footer > section {
 	.section {
 		padding: 20px 40px;
 	}
+	footer {
+		padding: 40px;
+		justify-content: space-between;
+	}
+	.footer__info {
+		height: 180px;
+	}
+	.footer__contactInfo {
+		height: 180px;
+	}
 }
 
 @media screen and (min-width: 1024px) {
 	.section {
 		padding: 40px 80px;
+	}
+	
+	footer {
+		padding: 80px;
+		justify-content: center;
+		gap: 400px;
 	}
 }
 
