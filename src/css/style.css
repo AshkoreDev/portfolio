@@ -7,9 +7,9 @@
 	--white: #ffffff;
 
 	/*fonts*/
-	--font-sm: ;
-	--font-md: ;
-	--font-lg: ;
+	--font-sm: 1.8rem;
+	--font-md: 2.2rem;
+	--font-lg: 3.4rem;
 
 	--border-buttons: 40px;
 	--padding-item: 4px;
@@ -23,11 +23,12 @@
 }
 
 html {
-	/*font-size: 62.5%;*/
+	font-size: 62.5%;
   scroll-behavior: smooth;
 }
 
 body {
+	/*font-size: var(--font-sm);*/
   background-color: var(--black);
 }
 
@@ -54,6 +55,7 @@ li {
 	padding: 10px 20px;
 	color: var(--black);
 	font-weight: bold;
+	font-size: var(--font-sm);
 	letter-spacing: var(--letter-spacing-buttons);
 	outline-offset: 2px;
 	outline: 1px solid var(--green);
@@ -62,13 +64,8 @@ li {
 	background-color: var(--green);
 }
 
-.card-button {
-
-}
-
 /*HEADER*/
 header {
-	/*height: 100vh;*/
 	flex-direction: column;
 }
 
@@ -92,6 +89,7 @@ header {
 .header--title {
 	color: var(--white);
 	letter-spacing: 1.2px;
+	font-size: var(--font-lg);
 }
 
 .header--subtitle {
@@ -99,6 +97,7 @@ header {
 	color: var(--green);
 	font-style: italic;
 	letter-spacing: 1.1px;
+	font-size: var(--font-md);
 }
 
 .header__socialMedia {
@@ -118,7 +117,6 @@ header {
 
 .header--button {
 	gap: 5px;
-	/*opacity: 0.8;*/
 }
 
 /*MENU*/
@@ -141,7 +139,7 @@ nav {
 	padding-bottom: var(--padding-item);
   color: var(--white);
   letter-spacing: 1.1px;
-  /*font-size: 1.5rem;*/
+  font-size: var(--font-sm);
   border-bottom: 1px solid transparent;
 }
 
@@ -160,14 +158,14 @@ nav {
 	margin-bottom: 10px;
 	color: var(--green);
 	font-style: italic;
-	/*font-size: 2rem;*/
+	font-size: var(--font-sm);
 	letter-spacing: 1.1px;
 }
 
 .section__header--title {
 	margin-bottom: 10px;
 	color: var(--white);
-  /*font-size: 2.5rem;*/
+  font-size: var(--font-md);
   letter-spacing: 2px;
 }
 
@@ -186,6 +184,7 @@ nav {
 	margin-bottom: 40px;
 	color: var(--white);
 	letter-spacing: 1.1px;
+	font-size: var(--font-sm);
 }
 
 .aboutMe--text span {
@@ -196,6 +195,7 @@ nav {
 	width: 300px;
 	margin-bottom: 40px;
 	padding: 10px;
+	font-size: var(--font-sm);
 	border: 1px solid var(--green);
 }
 
@@ -245,6 +245,7 @@ footer {
 	flex-wrap: wrap;
 	align-content: space-between;
 	color: var(--white);
+	font-size: var(--font-sm);
 	background-color: var(--grey);
 }
 

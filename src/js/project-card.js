@@ -39,8 +39,8 @@ class projectCard extends HTMLElement {
           <h3 class="card--title">${this.name}</h3>
           <p class="card--description">${this.description}</p>
           <div class="card__buttons">
-            <a href="${this.demo}" target="_blank">DEMO</a>
-            <a href="${this.repo}" target="_blank">CODE</a>
+            <a href="${this.demo}" target="_blank">Demo</a>
+            <a href="${this.repo}" target="_blank">Code</a>
           </div>
           </article>
         ${this.getStyle()}
@@ -78,11 +78,13 @@ class projectCard extends HTMLElement {
           color: var(--green);
           text-align: center;
           letter-spacing: 1.2px;
+          font-size: var(--font-md);
         }
         .card--description {
           margin-bottom: 30px;
           color: var(--white);
           letter-spacing: 1.1px;
+          font-size: var(--font-sm);
         }
         .card__buttons {
           gap: 20px;
@@ -95,6 +97,7 @@ class projectCard extends HTMLElement {
           color: var(--black);
           font-weight: bold;
           letter-spacing: 1.1px;
+          font-size: var(--font-sm);
           text-decoration: none;
           border-radius: 4px;
           border: 1px solid var(--green);
