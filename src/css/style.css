@@ -176,6 +176,9 @@ nav {
 /*ABOUT ME*/
 .aboutMe__info {
 	flex-wrap: wrap;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
 .aboutMe--text {
@@ -290,6 +293,10 @@ footer h3 {
 @media screen and (min-width: 1024px) {
 	.section {
 		padding: 40px 80px;
+	}
+	.aboutMe--text,
+	.aboutMe__card {
+		width: 500px;
 	}
 	footer {
 		padding: 80px;
