@@ -263,6 +263,7 @@ footer h3 {
 
 .footer__contactInfo__info {
 	margin-bottom: 10px;
+	letter-spacing: 1.1px;
 	justify-content: flex-start;
 	gap: 20px;
 }
