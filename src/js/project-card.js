@@ -61,6 +61,8 @@ class projectCard extends HTMLElement {
           min-height: 340px;
           padding: 10px;
           border-radius: 8px;
+          background-color: var(--grey);
+          opacity: 0.8;
         }
         .card__figure {
           width: 280px;
@@ -109,7 +111,7 @@ class projectCard extends HTMLElement {
             opacity: .6;
           }
           .card:hover {
-            background-color: var(--grey);
+            opacity: 1;
           }
         }
       </style>
