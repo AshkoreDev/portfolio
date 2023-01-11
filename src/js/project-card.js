@@ -67,12 +67,14 @@ class projectCard extends HTMLElement {
         .card__figure {
           width: 280px;
           height: 150px;
+          border-radius: 6px;
           background-color: var(--black);
         }
         .card__figure img {
           width: 100%;
           object-fit: cover;
           object-position: top;
+          border-radius: inherit;
         }
         .card--title {
           margin: 20px 0;
