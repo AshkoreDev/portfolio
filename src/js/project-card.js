@@ -7,7 +7,7 @@ class projectCard extends HTMLElement {
     }
 
     static get observedAttributes() {
-      return ['name', 'img', 'description', 'demo', 'repo'];
+      return ['name', 'img', 'description', 'tecnologies', 'demo', 'repo'];
     }
 
     attributeChangedCallback(attr, oldVal, newVal) {
@@ -19,6 +19,9 @@ class projectCard extends HTMLElement {
       }
       if(attr === 'description' && oldVal !== newVal) {
         this.description = newVal;
+      }
+      if(attr === 'tecnologies' && oldVal !== newVal) {
+        this.tecnologies = newVal;
       }
       if(attr === 'demo' && oldVal !== newVal) {
         this.demo = newVal;
@@ -38,6 +41,7 @@ class projectCard extends HTMLElement {
 
           <h3 class="card--title">${this.name}</h3>
           <p class="card--description">${this.description}</p>
+          <p class="card--tecnologies">${this.tecnologies}</p>
           <div class="card__buttons">
             <a href="${this.demo}" target="_blank">Demo</a>
             <a href="${this.repo}" target="_blank">Code</a>
@@ -84,11 +88,18 @@ class projectCard extends HTMLElement {
           font-size: var(--font-md);
         }
         .card--description {
-          min-height: 64px;
-          margin-bottom: 30px;
+          height: 50px;
           color: var(--white);
           letter-spacing: 1.1px;
           font-size: var(--font-sm);
+        }
+        .card--tecnologies {
+          height: 30px;
+          margin: 10px 0 20px;
+          color: var(--green);
+          font-size: 1.6rem;
+          font-weight: bold;
+          letter-spacing: 1.1px; 
         }
         .card__buttons {
           gap: 20px;
