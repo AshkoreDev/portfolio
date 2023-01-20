@@ -99,6 +99,7 @@ class projectCard extends HTMLElement {
           color: var(--green);
           font-size: 1.6rem;
           font-weight: bold;
+          text-align: center;
           letter-spacing: 1.1px; 
         }
         .card__buttons {
