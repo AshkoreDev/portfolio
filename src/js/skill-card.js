@@ -41,7 +41,7 @@ class SkillCard extends HTMLElement {
         box-sizing: border-box;
       }
       .skills__area--item {
-        width: 140px;
+        width: 120px;
         padding: 10px;
         text-align: center;
         border-radius: 6px;
