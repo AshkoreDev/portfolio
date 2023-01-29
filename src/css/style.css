@@ -125,6 +125,7 @@ nav {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  z-index: 1;
   background-color: var(--grey);
 }
 
@@ -132,6 +133,7 @@ nav {
 	width: 100%;
   height: 100%;
   justify-content: space-around;
+   background-color: var(--grey);
 }
 
 .navBar a {
@@ -238,6 +240,26 @@ nav {
 	gap: 80px; 
 }
 
+/*UP BUTTON*/
+.upButton {
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	bottom: 20px;
+  right: 20px;
+  z-index: 1;
+	opacity: 0.2;
+	border-radius: 50%;
+	outline-offset: 2px;
+	outline: 2px solid  var(--green);;
+	background:  var(--green);;
+}
+
+.upButton img {
+	width: 100%;
+	
+}
+
 /*FOOTER*/
 footer {
 	height: 320px;
@@ -317,5 +339,9 @@ footer h3 {
 	}
 	.navBar a:hover {
 		color: var(--green);
+	}
+	.upButton:hover {
+		opacity: 1;
+		cursor: pointer;
 	}
 }
