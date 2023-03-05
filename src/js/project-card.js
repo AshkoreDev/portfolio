@@ -40,7 +40,6 @@ class projectCard extends HTMLElement {
           </figure>
 
           <h3 class="card--title">${this.name}</h3>
-          <p class="card--description">${this.description}</p>
           <p class="card--tecnologies">${this.tecnologies}</p>
           <div class="card__buttons">
             <a href="${this.demo}" target="_blank">Demo</a>
@@ -62,7 +61,7 @@ class projectCard extends HTMLElement {
         }
         .card {
           width: 300px;
-          min-height: 340px;
+          min-height: 300px;
           padding: 10px;
           border-radius: 8px;
           background-color: var(--grey);
@@ -96,7 +95,7 @@ class projectCard extends HTMLElement {
         .card--tecnologies {
           height: 30px;
           margin: 10px 0 20px;
-          color: var(--green);
+          color: var(--white);
           font-size: 1.6rem;
           font-weight: bold;
           text-align: center;
