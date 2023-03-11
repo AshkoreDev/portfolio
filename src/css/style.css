@@ -242,22 +242,27 @@ nav {
 
 /*UP BUTTON*/
 .upButton {
-	width: 50px;
-	height: 50px;
+	width: 40px;
+	height: 40px;
 	position: fixed;
 	bottom: 20px;
   right: 20px;
   z-index: 1;
-	opacity: 0.2;
+	opacity: 0;
 	border-radius: 50%;
 	outline-offset: 2px;
 	outline: 2px solid  var(--green);;
-	background:  var(--green);;
+	background:  var(--green);
+	transition: 1s;
 }
 
 .upButton img {
 	width: 100%;
-	
+	height: 100%;
+}
+
+.upButton-on {
+	opacity: 0.5;
 }
 
 /*FOOTER*/
