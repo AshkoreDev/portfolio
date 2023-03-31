@@ -24,6 +24,7 @@ class SkillCard extends HTMLElement {
     template.innerHTML = `
       <article class="skills__area--item">
         <img src="${this.img}" alt="${this.title} logo" width="30" height="30" loading="lazy">
+        <p>${this.title}</p>
       </article>
 
       ${this.getStyle()}
@@ -40,7 +41,7 @@ class SkillCard extends HTMLElement {
         box-sizing: border-box;
       }
       .skills__area--item {
-        width: 60px;
+        width: 120px;
         padding: 10px;
         text-align: center;
         border-radius: 6px;
@@ -49,6 +50,10 @@ class SkillCard extends HTMLElement {
       .skills__area--item img {
         width: 30px;
         height: 30px;
+      }
+      .skills__area--item p {
+        color: #fff;
+        font-size: 1.6rem;
       }
 
       @media (hover: hover) {
