@@ -92,7 +92,7 @@ class projectCard extends HTMLElement {
             border-radius: inherit;
           }
           .card--title {
-            margin: 20px 0;
+            margin: 30px 0 20px;
             color: var(--green);
             text-align: center;
             letter-spacing: 1.2px;
