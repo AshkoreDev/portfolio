@@ -7,12 +7,12 @@ class SkillCard extends HTMLElement {
   }
 
   static get observedAttributes() {
-    return ['img', 'title'];
+    return ['image', 'title'];
   }
 
   attributeChangedCallback(attr, oldVal, newVal) {
-    if(attr === 'img' && oldVal !== newVal) {
-      this.img = newVal;
+    if(attr === 'image' && oldVal !== newVal) {
+      this.image = newVal;
     }
     if(attr === 'title' && oldVal !== newVal) {
       this.title = newVal;
@@ -23,7 +23,7 @@ class SkillCard extends HTMLElement {
     const template = document.createElement('template');
     template.innerHTML = `
       <article class="skills__area--item">
-        <img src="${this.img}" alt="${this.title} logo" width="30" height="30" loading="lazy">
+        <img src="${this.image}" alt="${this.title} logo" width="30" height="30" loading="lazy">
         <p>${this.title}</p>
       </article>
 
