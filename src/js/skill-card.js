@@ -65,7 +65,7 @@ class SkillCard extends HTMLElement {
 
         @media (hover: hover) {
           .skills__area--item:hover {
-            opacity: .6;
+            opacity: .8;
           }
         }
       </style>
