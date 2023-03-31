@@ -87,7 +87,7 @@ class projectCard extends HTMLElement {
           }
           .card__figure img {
             width: 100%;
-            object-fit: cover;
+            object-fit: fill;
             object-position: top;
             border-radius: inherit;
           }
